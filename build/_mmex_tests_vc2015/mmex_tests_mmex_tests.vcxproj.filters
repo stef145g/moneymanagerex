@@ -453,6 +453,9 @@
     <ClCompile Include="..\..\src\transactionsupdatedialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\tests\test_json.cpp">
+      <Filter>Test Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\aboutdialog.h">
@@ -946,6 +949,9 @@
     </ClInclude>
     <ClInclude Include="..\..\src\transactionsupdatedialog.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tests\test_json.h">
+      <Filter>Test Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
