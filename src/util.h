@@ -24,6 +24,9 @@
 #include <wx/valnum.h>
 #include <map>
 
+//Returns a JSON formatted string from RapidJson DOM
+wxString JSON_PrettyFormated(Document& j_doc);
+
 class mmGUIApp;
 struct ValuePair
 {
