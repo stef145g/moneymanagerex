@@ -1335,8 +1335,6 @@ void mmGUIFrame::createBudgetingPage(int budgetYearID)
     json_writer.Key("end"); json_writer.String(wxDateTime::Now().FormatISOCombined());
     json_writer.EndObject();
 
-    wxLogDebug("===== mmGUIFrame::createBudgetingPage ============");
-    wxLogDebug("%s", json_buffer.GetString());
     Model_Usage::instance().AppendToUsage(json_buffer.GetString());
 
     menuPrintingEnable(true);
@@ -1383,8 +1381,6 @@ void mmGUIFrame::createHomePage()
     json_writer.Key("end"); json_writer.String(wxDateTime::Now().FormatISOCombined());
     json_writer.EndObject();
     
-    wxLogDebug("===== mmGUIFrame::createHomePage =================");
-    wxLogDebug("%s", json_buffer.GetString());
     Model_Usage::instance().AppendToUsage(json_buffer.GetString());
 }
 //----------------------------------------------------------------------------
@@ -2722,8 +2718,7 @@ void mmGUIFrame::createBillsDeposits()
 
     json_writer.Key("end"); json_writer.String(wxDateTime::Now().FormatISOCombined());
     json_writer.EndObject();
-    wxLogDebug("===== mmGUIFrame::createBillsDeposits ============");
-    wxLogDebug("%s", json_buffer.GetString());
+
     Model_Usage::instance().AppendToUsage(json_buffer.GetString());
 }
 //----------------------------------------------------------------------------
@@ -2759,8 +2754,6 @@ void mmGUIFrame::createCheckingAccountPage(int accountID)
     json_writer.Key("end"); json_writer.String(wxDateTime::Now().FormatISOCombined());
     json_writer.EndObject();
 
-    wxLogDebug("===== mmGUIFrame::createCheckingAccountPage ======");
-    wxLogDebug("%s", json_buffer.GetString());
     Model_Usage::instance().AppendToUsage(json_buffer.GetString());
     
     menuPrintingEnable(true);
@@ -2795,8 +2788,7 @@ void mmGUIFrame::createStocksAccountPage(int accountID)
 
     json_writer.Key("end"); json_writer.String(wxDateTime::Now().FormatISOCombined());
     json_writer.EndObject();
-    wxLogDebug("===== mmGUIFrame::createStocksAccountPage ========");
-    wxLogDebug("%s", json_buffer.GetString());
+    
     Model_Usage::instance().AppendToUsage(json_buffer.GetString());
 }
 
@@ -2845,8 +2837,6 @@ void mmGUIFrame::OnAssets(wxCommandEvent& /*event*/)
     json_writer.Key("end"); json_writer.String(wxDateTime::Now().FormatISOCombined());
     json_writer.EndObject();
 
-    wxLogDebug("===== mmGUIFrame::OnAssets =======================");
-    wxLogDebug("%s", json_buffer.GetString());
     Model_Usage::instance().AppendToUsage(json_buffer.GetString());
 }
 //----------------------------------------------------------------------------
