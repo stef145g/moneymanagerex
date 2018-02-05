@@ -14,15 +14,15 @@
 #define MMEX_VERSION_BETA  -1
 #define MMEX_VERSION_RC    -1
 
-#define GIT_COMMIT_HASH "b8faffc"
-#define GIT_COMMIT_DATE "2017-09-14"
-#define GIT_BRANCH      "master"
+#define GIT_COMMIT_HASH "dd11ac32"
+#define GIT_COMMIT_DATE "2018-02-05"
+#define GIT_BRANCH      "rapidjson"
 
-#define CMAKE_VERSION   "CMake 3.9.1"
-#define CMAKE_GENERATOR "Visual Studio 14 2015 Win64"
-#define MAKE_VERSION    "MSBuild 14.0.25420.1"
+#define CMAKE_VERSION   "CMake 3.9.0"
+#define CMAKE_GENERATOR "Visual Studio 15 2017 Win64"
+#define MAKE_VERSION    "MSBuild 15.5.180.51428"
 #define GETTEXT_VERSION "gettext 0.19.8.1"
-#define CXX_VERSION     "19.0.24215.1"
-/* #undef VS_VERSION */
-/* #undef CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION */
+#define CXX_VERSION     "19.12.25831.0"
+#define VS_VERSION "15.0"
+#define CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION "Windows SDK 10.0.16299.0"
 /* #undef LINUX_DISTRO_STRING */

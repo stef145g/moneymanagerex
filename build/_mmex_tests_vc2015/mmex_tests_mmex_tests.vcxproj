@@ -179,7 +179,7 @@
     <ClCompile>
       <AdditionalOptions>/MP /D_CRT_SECURE_NO_WARNINGS /Zi %(AdditionalOptions)</AdditionalOptions>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>$(WXWIN)\lib\vc_x64_lib\mswu;$(WXWIN)\include;..\..\3rd\wxsqlite3\sqlite3\secure\src;..\..\3rd\wxsqlite3\include;..\..\3rd\lua\src;..\..\lib;..\..\3rd;..\..\3rd\LuaGlue\include;..\..\3rd\cgitemplate;..\..\3rd\csv-parser\include;..\..\src;..\..\src;..\..\3rd\cppunit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WXWIN)\lib\vc_x64_lib\mswu;$(WXWIN)\include;..\..\src;..\..\3rd\wxsqlite3\sqlite3\secure\src;..\..\3rd\wxsqlite3\include;..\..\3rd\rapidjson\include;..\..\3rd\lua\src;..\..\lib;..\..\3rd;..\..\3rd\LuaGlue\include;..\..\3rd\cgitemplate;..\..\3rd\csv-parser\include;..\..\3rd\cppunit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_UNICODE;__WXMSW__;NDEBUG;NOPCH;_CONSOLE;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -218,7 +218,7 @@
     <ClCompile>
       <AdditionalOptions>/MP /D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(WXWIN)\lib\vc_x64_lib\mswud;$(WXWIN)\include;..\..\3rd\wxsqlite3\sqlite3\secure\src;..\..\3rd\wxsqlite3\include;..\..\3rd\lua\src;..\..\lib;..\..\3rd;..\..\3rd\LuaGlue\include;..\..\3rd\cgitemplate;..\..\3rd\csv-parser\include;..\..\src;..\..\src;..\..\3rd\cppunit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(WXWIN)\lib\vc_x64_lib\mswud;$(WXWIN)\include;..\..\3rd\wxsqlite3\sqlite3\secure\src;..\..\3rd\wxsqlite3\include;..\..\3rd\rapidjson\include;..\..\3rd\lua\src;..\..\lib;..\..\3rd;..\..\3rd\LuaGlue\include;..\..\3rd\cgitemplate;..\..\3rd\csv-parser\include;..\..\src;..\..\3rd\cppunit\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_UNICODE;__WXDEBUG__;__WXMSW__;_DEBUG;NOPCH;_CONSOLE;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Sync</ExceptionHandling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
