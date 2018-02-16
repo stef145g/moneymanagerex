@@ -245,3 +245,27 @@ void Test_JSON::TestJson_CategoryListToJson()
 
     delete database;
 }
+
+void Test_JSON::TestJson_ModelChecking_FullDataToJson()
+{
+    DB_Model* database = new DB_Model();
+    database->Init_Model_Tables(&m_test_db);
+    database->Init_BaseCurrency();
+
+    int account_id = database->Add_Bank_Account("Savings", 1200.00);
+    int trans_id = database->Add_Trans_Withdrawal("Savings", wxDateTime::Today(), "Coles", 100.20);
+    database->Add_Trans_Split(trans_id, 60.20, "Food", "Groceries");
+    database->Add_Trans_Split(trans_id, 40.00, "Food", "Groceries");
+
+    auto trans = Model_Checking::instance().get(trans_id);
+    const auto splits = Model_Splittransaction::instance().get_all();
+    Model_Checking::Full_Data full_trans(account_id, *trans, splits);
+    wxString json_transaction = full_trans.to_json();
+    
+
+    int trans_nsid = database->Add_Trans_Deposit("Savings", wxDateTime::Today(), "Aldi", 75.25, "Income", "Salary", "Testing no splits");
+    Model_Checking::Full_Data ft_noSplit(account_id, *Model_Checking::instance().get(trans_nsid));
+    auto json_trans = ft_noSplit.to_json();
+
+    delete database;
+}

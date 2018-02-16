@@ -30,6 +30,7 @@ class Test_JSON : public CPPUNIT_NS::TestFixture
     CPPUNIT_TEST(TestJson_db_table_accountlist);
     CPPUNIT_TEST(TestJson_PayeeListToJson);
     CPPUNIT_TEST(TestJson_CategoryListToJson);
+    CPPUNIT_TEST(TestJson_ModelChecking_FullDataToJson);
     CPPUNIT_TEST_SUITE_END();
 
 public:
@@ -49,5 +50,6 @@ private:
     void TestJson_db_table_accountlist();
     void TestJson_PayeeListToJson();
     void TestJson_CategoryListToJson();
+    void TestJson_ModelChecking_FullDataToJson();
 };
 //----------------------------------------------------------------------------
